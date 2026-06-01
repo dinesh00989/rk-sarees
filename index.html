@@ -23,8 +23,13 @@
 
   <nav class="navbar">
 
-    <div class="logo">
-      RK SAREES
+    <a href="index.html" class="logo">
+
+    <img src="images/logo.png" alt="RK Sarees Logo">
+
+    <span>RK Sarees</span>
+
+</a>
     </div>
 
   <ul class="nav-links">
@@ -52,6 +57,27 @@
   </nav>
 
 
+    <!-- TOP OFFER BAR -->
+
+<div class="top-offer-bar">
+
+    <div class="top-offer-track">
+
+        🔥 Flat 50% OFF On Selected Sarees &nbsp;&nbsp;&nbsp;
+
+        🚚 Free Shipping Above ₹999 &nbsp;&nbsp;&nbsp;
+
+        🔥 Flat 50% OFF On Selected Sarees &nbsp;&nbsp;&nbsp;
+
+        🚚 Free Shipping Above ₹999 &nbsp;&nbsp;&nbsp;
+
+        🔥 Flat 50% OFF On Selected Sarees &nbsp;&nbsp;&nbsp;
+
+        🚚 Free Shipping Above ₹999 &nbsp;&nbsp;&nbsp;
+    </div>
+
+</div>
+
 
   <!-- HERO -->
 
@@ -59,18 +85,42 @@
 
   <div class="slides">
 
-    <img src="images/hero1.png" class="slide">
-    <img src="images/hero2.png" class="slide">
-    <img src="images/hero3.png" class="slide">
+    <img src="images/hero1.png" class="slide" onclick="scrollToCollections()">
+
+    <img src="images/hero2.png" class="slide" onclick="scrollToCollections()">
+
+    <img src="images/hero3.png" class="slide" onclick="scrollToCollections()">
 
   </div>
 
 </section>
+<!-- SCROLLING ANNOUNCEMENT BAR -->
 
+<div class="announcement-bar">
+
+    <div class="announcement-track">
+
+        ✨ Flat 50% Off On Selected Sarees &nbsp;&nbsp;&nbsp;
+
+        🚚 Free Shipping Above ₹999 &nbsp;&nbsp;&nbsp;
+
+        💖 Bridal & Wedding Collections Available &nbsp;&nbsp;&nbsp;
+
+        🛍️ Easy WhatsApp Inquiry &nbsp;&nbsp;&nbsp;
+
+        🌸 New Arrivals Added Weekly &nbsp;&nbsp;&nbsp;
+
+        🔥 Premium Kanchipattu Collections Live &nbsp;&nbsp;&nbsp;
+
+    </div>
+
+</div>
 
   <!-- COLLECTIONS -->
 
-  <div class="collection-grid">
+  <section class="collection-section" id="collections">
+
+<div class="collection-grid">
 
   <!-- CARD 1 -->
 
@@ -173,7 +223,100 @@
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="">
 
 </a>
+<!-- CIRCULAR HIGHLIGHTS SECTION -->
 
+<section class="highlights-section">
+
+    <div class="highlights-scroll">
+
+
+        <!-- ITEM 1 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                ⭐
+            </div>
+
+            <h3>Premium Quality</h3>
+
+        </div>
+
+
+
+        <!-- ITEM 2 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                💖
+            </div>
+
+            <h3>Bridal Specialists</h3>
+
+        </div>
+
+
+
+        <!-- ITEM 3 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                🚚
+            </div>
+
+            <h3>Fast Delivery</h3>
+
+        </div>
+
+
+
+        <!-- ITEM 4 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                🛍️
+            </div>
+
+            <h3>Easy Ordering</h3>
+
+        </div>
+
+
+
+        <!-- ITEM 5 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                ✨
+            </div>
+
+            <h3>Trending Styles</h3>
+
+        </div>
+
+
+
+        <!-- ITEM 6 -->
+
+        <div class="highlight-item">
+
+            <div class="highlight-circle">
+                🔥
+            </div>
+
+            <h3>Festive Collections</h3>
+
+        </div>
+
+
+    </div>
+    
+
+</section>
 <!-- FEATURED SECTION -->
 
 <section class="featured-section reveal" id="featured">
@@ -342,6 +485,17 @@
 
 </footer>
 <script src="script.js"></script>
+<script>
 
+function scrollToCollections(){
+
+    document.getElementById("collections")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+</script>
 </body>
 </html>
